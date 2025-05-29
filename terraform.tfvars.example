@@ -1,0 +1,22 @@
+# AWS Region
+region = "us-east-1"
+
+# Project configuration
+project_name = "three-tier"
+environment  = "dev"
+
+# Network configuration
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b"]
+
+# Instance configuration
+instance_type      = "t2.micro"
+key_name           = "your-ssh-key-name"
+web_instance_count = 2
+app_instance_count = 2
+
+# Database configuration
+db_instance_class = "db.t3.micro"
+db_name           = "appdb"
+db_username       = "admin"
+db_password       = "YourSecurePassword123!" # Change this to a secure password
